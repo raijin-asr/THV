@@ -17,20 +17,20 @@ THV (TeleHealth Village) is Intra-College Hackathon Project by Team H led by Ame
 <p>fig 1: Index Page </p></br>
 
 ![image](https://github.com/raijin-asr/THV/assets/97660344/ffccb72a-dbdd-4206-ab2e-e63b4ba887f9)
-p>fig 2: (Admin)Login Page </p></br>
+<p>fig 2: (Admin)Login Page </p></br>
 
 ![image](https://github.com/raijin-asr/THV/assets/97660344/9c7fceba-b393-452b-89bc-412439164c2e)
 <p>fig 3: Admin Dashboard Page </p></br>
 
 ![image](https://github.com/raijin-asr/THV/assets/97660344/85a323d7-b043-4e84-a941-8c322fa14f55)
-p>fig 4: (Doctor) Login Page </p></br>
+<p>fig 4: (Doctor) Login Page </p></br>
 
 ![image](https://github.com/raijin-asr/THV/assets/97660344/bd162348-c568-45bb-99b4-716c98c6a96d)
-p>fig 5: Doctor Dashboard Page </p></br>
+<p>fig 5: Doctor Dashboard Page </p></br>
 
 
-p>fig 6: (Patient) Login Page </p></br>
+<p>fig 6: (Patient) Login Page </p></br>
 
-p>fig 7: Patient Dashboard Page </p></br>
+<p>fig 7: Patient Dashboard Page </p></br>
 
 Copyright &copy; <em>TeleHealth Village</em>
