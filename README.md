@@ -13,7 +13,7 @@ THV (TeleHealth Village) is Intra-College Hackathon Project by Team H led by Ame
 
 <h1>Screenshots</h1>
 
-![image](https://github.com/raijin-asr/THV/assets/97660344/9ebd570f-0514-45d8-9c6a-27f619ec762e)
+![image](https://github.com/raijin-asr/THV/assets/97660344/be3ae17d-5aa9-48c3-abf8-c142fb273386)
 <p>fig 1: Index Page </p></br>
 
 ![image](https://github.com/raijin-asr/THV/assets/97660344/ffccb72a-dbdd-4206-ab2e-e63b4ba887f9)
