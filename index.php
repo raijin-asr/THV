@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Page Title -->
-    <title>TeleHealth Village</title>
+    <title>TeleHealth Village(Healthy Gau)</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
@@ -55,9 +55,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h4>Bridging Medical Gaps in Remote Villages</h4>
-                    <h1>Leading the way in medical excellence</h1>
-                    <p>Emphasizing the goal of using telehealth to connect these rural areas with essential healthcare resources.</p>
+                    <h4>Bridging Medical Gaps in Remote Villages in Nepal</h4>
+                    <h1>Aba hunxa Gau Healthy</h1>
+                    <p>Emphasizing the goal of using tele-health to connect these rural areas with essential healthcare resources.</p>
                 </div>
             </div>
         </div>
