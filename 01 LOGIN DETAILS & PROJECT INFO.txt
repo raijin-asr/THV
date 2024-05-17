@@ -17,6 +17,12 @@ Password: Password@123
 Email   : sanduk@gmail.com
 Password: password
 
+----------------------------------
+**Patient Login Details**
+
+Email   : @gmail.com
+Password: password
+
 Copyright ©️ 2024 Raijin
 
 
