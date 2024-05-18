@@ -2,6 +2,6 @@
 $dbuser="root";
 $dbpass="";
 $host="localhost";
-$db="thv2";
+$db="thv";
 $mysqli=new mysqli($host,$dbuser, $dbpass, $db);
 ?>

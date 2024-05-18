@@ -200,7 +200,7 @@ textarea:focus {
     padding: 7px 10px;
     text-decoration: none;
     display: inline-block;
-    color: #222;
+    color: white;
     font-weight: 500;
     font-size: 12px;
     text-transform: uppercase;
@@ -446,7 +446,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #header.header-scrolled {
-    background: #f9f9fd;
+    background: black;
     transition: all 0.5s;
     top: 0
 }
@@ -490,7 +490,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-area {
     padding: 400px 0 350px;
-    background-color: tomato;
+    background-image: url("../images/banner-bg3.jpg");
+    /* background-color: tomato; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

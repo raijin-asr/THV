@@ -39,7 +39,7 @@
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="index.php">Home</a></li>
-                        <li><a href="backend/doc/index.php">Patient Login</a></li>
+                        <li><a href="backend/patients/index.php">Patient Login</a></li>
                         <li><a href="backend/doc/index.php">Doctor Login</a></li>
                         <li><a href="backend/admin/index.php">Admin Login</a></li>
                     </ul>
@@ -55,9 +55,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h4>Bridging Medical Gaps in Remote Villages in Nepal</h4>
-                    <h1>Aba hunxa Gau Healthy</h1>
-                    <p>Emphasizing the goal of using tele-health to connect these rural areas with essential healthcare resources.</p>
+                    <h4 style="color:white">Bridging Medical Gaps in Remote Villages in Nepal</h4>
+                    <h1 style="color:white">Aba hunxa Gau Healthy</h1>
+                    <p style="color:white">Emphasizing the goal of using tele-health to connect these rural areas with essential healthcare resources.</p>
                 </div>
             </div>
         </div>

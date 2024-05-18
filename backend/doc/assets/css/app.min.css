@@ -2041,9 +2041,8 @@ body.authentication-bg {
 }
 
 body.authentication-bg-pattern {
-    background-image: url(../../../admin/assets/images/bg-pattern.jpg);
-    background-color: #6658dd
-}
+    background-color: #65dd58
+}rgb(88, 221, 108)
 
 .logout-icon {
     width: 140px

@@ -20,8 +20,8 @@ Password: password
 ----------------------------------
 **Patient Login Details**
 
-Email   : @gmail.com
-Password: password
+Email   : kp@gmail.com
+Password: kpoli123
 
 Copyright ©️ 2024 Raijin
 

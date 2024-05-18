@@ -4,7 +4,7 @@
   include('assets/inc/checklogin.php');
   check_login();
   $doc_id=$_SESSION['doc_id'];
-  $doc_number = $_SESSION['doc_number'];
+//   $doc_number = $_SESSION['doc_number'];
 
 ?>
 <!DOCTYPE html>

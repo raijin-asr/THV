@@ -31,7 +31,7 @@
     
 <head>
         <meta charset="utf-8" />
-        <title>TeleHealth Village</title>
+        <title>TeleHealth Village(Swastha GaU)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="" name="description" />
         <meta content="" name="MartDevelopers" />

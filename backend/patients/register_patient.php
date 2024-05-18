@@ -2,16 +2,16 @@
 <?php
 	session_start();
 	include('assets/inc/config.php');
-		if(isset($_POST['doc_sup']))
+		if(isset($_POST['pat_sup']))
 		{
-			$doc_fname=$_POST['doc_fname'];
-			$doc_lname=$_POST['doc_lname'];
-			$doc_email=$_POST['doc_email'];
-			$doc_pwd=sha1(md5($_POST['doc_pwd']));//double encrypt to increase security
+			$pat_fname=$_POST['pat_fname'];
+			$pat_lname=$_POST['pat_lname'];
+			$pat_email=$_POST['pat_email'];
+			$pat_pwd=sha1(md5($_POST['pat_pwd']));//double encrypt to increase security
             //sql to insert captured values
-			$query="insert into his_docs (doc_fname, doc_lname, doc_email, doc_pwd) values(?,?,?,?)";
+			$query="insert into his_patients (pat_fname, pat_lname, pat_email, pat_pwd) values(?,?,?,?)";
 			$stmt = $mysqli->prepare($query);
-			$rc=$stmt->bind_param('ssss', $doc_fname, $doc_lname, $doc_email, $doc_pwd);
+			$rc=$stmt->bind_param('ssss', $pat_fname, $pat_lname, $pat_email, $pat_pwd);
 			$stmt->execute();
 			/*
 			*Use Sweet Alerts Instead Of This Fucked Up Javascript Alerts
@@ -91,30 +91,30 @@
                                     <a href="admin_register.php">
                                         <span><img src="assets/images/logo-dark.png" alt="" height="22"></span>
                                     </a>
-                                    <h3 class="text-black mb-4 mt-3">Create Doctor Account</h3>
+                                    <h3 class="text-black mb-4 mt-3">Create Patient Account</h3>
                                 </div>
 
                                 <form  method='post'>
 
                                     <div class="form-group">
                                         <label for="fullname">First Name</label>
-                                        <input class="form-control" type="text"  name = "doc_fname" id="fullname" placeholder="Enter your name" required>
+                                        <input class="form-control" type="text"  name = "pat_fname" id="fullname" placeholder="Enter your name" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="fullname">Last Name</label>
-                                        <input class="form-control" type="text" name="doc_lname" id="fullname" placeholder="Enter your name" required>
+                                        <input class="form-control" type="text" name="pat_lname" id="fullname" placeholder="Enter your name" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="emailaddress">Email address</label>
-                                        <input class="form-control" name="doc_email" type="email" id="emailaddress" required placeholder="Enter your email">
+                                        <input class="form-control" name="pat_email" type="email" id="emailaddress" required placeholder="Enter your email">
                                     </div>
                                     <div class="form-group">
                                         <label for="password">Password</label>
-                                        <input class="form-control" name="doc_pwd" type="password" required id="password" placeholder="Enter your password">
+                                        <input class="form-control" name="pat_pwd" type="password" required id="password" placeholder="Enter your password">
                                     </div>
                                     
                                     <div class="form-group mb-0 text-center">
-                                        <button class="btn btn-primary btn-block" name="doc_sup" type="submit"> Sign Up </button>
+                                        <button class="btn btn-primary btn-block" name="pat_sup" type="submit"> Sign Up </button>
                                     </div>
 
                                 </form>

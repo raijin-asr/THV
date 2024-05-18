@@ -1,20 +1,18 @@
 <?php
     session_start();
     include('assets/inc/config.php');//get configuration file
-    if(isset($_POST['doc_login']))
+    if(isset($_POST['pat_login']))
     {
-        $doc_number = $_POST['doc_number'];
-        //$doc_email = $_POST['doc_ea']
-        $doc_pwd = sha1(md5($_POST['doc_pwd']));//double encrypt to increase security
-        $stmt=$mysqli->prepare("SELECT doc_number, doc_pwd, doc_id FROM his_docs WHERE  doc_number=? AND doc_pwd=? ");//sql to log in user
-        $stmt->bind_param('ss', $doc_number, $doc_pwd);//bind fetched parameters
+        $pat_email = $_POST['pat_email'];
+        $pat_pwd = sha1(md5($_POST['pat_pwd']));//double encrypt to increase security
+        $stmt=$mysqli->prepare("SELECT pat_email, pat_pwd, pat_id FROM his_patients WHERE  pat_email=? AND pat_pwd=? ");//sql to log in user
+        $stmt->bind_param('ss', $pat_email, $pat_pwd);//bind fetched parameters
         $stmt->execute();//execute bind
-        $stmt -> bind_result($doc_number, $doc_pwd ,$doc_id);//bind result
+        $stmt -> bind_result($pat_email, $pat_pwd ,$pat_id);//bind result
         $rs=$stmt->fetch();
-        $_SESSION['doc_id'] = $doc_id;
-        $_SESSION['doc_number'] = $doc_number;//Assign session to doc_number id
-        //$uip=$_SERVER['REMOTE_ADDR'];
-        //$ldate=date('d/m/Y h:i:s', time());
+        $_SESSION['pat_id'] = $pat_id;
+        $_SESSION['pat_email'] = $pat_email;
+        
         if($rs)
             {//if its sucessfull
                 header("location:his_doc_dashboard.php");
@@ -33,7 +31,7 @@
     
 <head>
         <meta charset="utf-8" />
-        <title>Hospital Management System -A Super Responsive Information System</title>
+        <title>TeleHealth Village - Swastha Gau</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="" name="description" />
         <meta content="" name="MartDevelopers" />
@@ -89,28 +87,33 @@
                                 
                                 <div class="text-center w-75 m-auto">
                                     <a href="index.php">
-                                        <span><img src="assets/images/logo-dark.png" alt="" height="22"></span>
+                                        <span><img src="assets/images/login logo.png" alt="" height="30"></span>
                                     </a>
-                                    <p class="text-muted mb-4 mt-3">Enter your email address and password to access Doctor panel.</p>
+                                    <p class="text-muted mb-4 mt-3">Welcome to Patient Login panel.</p>
                                 </div>
 
                                 <form method='post' >
 
                                     <div class="form-group mb-3">
-                                        <label for="emailaddress">Doctor Number</label>
-                                        <input class="form-control" name="doc_number" type="text" id="emailaddress" required="" placeholder="Enter your doctor number">
+                                        <label for="emailaddress">Patient Email</label>
+                                        <input class="form-control" name="pat_email" type="text" id="emailaddress" required="" placeholder="Enter your patient number">
                                     </div>
 
                                     <div class="form-group mb-3">
-                                        <label for="password">Password</label>
-                                        <input class="form-control" name="doc_pwd" type="password" required="" id="password" placeholder="Enter your password">
+                                        <label for="password">Patient Password</label>
+                                        <input class="form-control" name="pat_pwd" type="password" required="" id="password" placeholder="Enter your password">
                                     </div>
 
                                     <div class="form-group mb-0 text-center">
-                                        <button class="btn btn-success btn-block" name="doc_login" type="submit"> Log In </button>
+                                        <button class="btn btn-success btn-block" name="pat_login" type="submit"> Log In </button>
                                     </div>
 
                                 </form>
+
+                                <div class="text-center">
+                                    <p class="text-black-50 ml-1 mt-2"> <a href="his_doc_reset_pwd.php">Forgot your password?</a></p>
+                                    <p class="text-black-50 ml-1">Don't have an account? <a href="register_patient.php"><b>Sign Up</b></a></p>
+                                </div>
 
                                 <!--
                                 For Now Lets Disable This 
@@ -140,8 +143,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p> <a href="his_doc_reset_pwd.php" class="text-white-50 ml-1">Forgot your password?</a></p>
-                               <!-- <p class="text-white-50">Don't have an account? <a href="his_admin_register.php" class="text-white ml-1"><b>Sign Up</b></a></p>-->
+                                <p class="text-white-50">Back to <a href="../../index.php" class="text-white ml-1"><b>HomePage</b></a></p>
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->

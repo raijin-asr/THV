@@ -91,7 +91,7 @@
                                     <a href="index.php">
                                         <span><img src="assets/images/login logo.png" alt="" height="30"></span>
                                     </a>
-                                    <p class="text-muted mb-4 mt-3">Lgoin to access Doctor panel.</p>
+                                    <p class="text-muted mb-4 mt-3">Login to access Doctor panel.</p>
                                 </div>
 
                                 <form method='post' >
